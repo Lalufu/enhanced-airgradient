@@ -8,28 +8,28 @@ This code supports the original ESP8266 and an ESP32-C3 as the microcontroller
 It supports the original CO2, PM, TVOC and temperature/humidity sensors.
 In addition, it supports a BME280/BMP280 sensor for air pressure.
 
-Build Instructions:
+Build Instructions for the hardware:
 https://www.airgradient.com/open-airgradient/instructions/diy-pro-v37/
 
 Kits (including a pre-soldered version) are available:
 https://www.airgradient.com/open-airgradient/kits/
 
 The codes needs the following libraries installed:
-“WifiManager by tzapu, tablatronix” tested with version 2.0.11-beta
-“U8g2” by oliver tested with version 2.32.15
-"Sensirion I2C SGP41" by Sensation Version 0.1.0
-"Sensirion Gas Index Algorithm" by Sensation Version 3.2.1
-"SparkFun BME280" Version 2.0.9
-"ArduinoJson" Version 6.21.1
-"modbus-esp8266" Version 4.1.0
+- “WifiManager by tzapu, tablatronix” tested with version 2.0.11-beta
+- “U8g2” by oliver tested with version 2.32.15
+- "Sensirion I2C SGP41" by Sensation Version 0.1.0
+- "Sensirion Gas Index Algorithm" by Sensation Version 3.2.1
+- "SparkFun BME280" Version 2.0.9
+- "ArduinoJson" Version 6.21.1
+- "modbus-esp8266" Version 4.1.0
 
 In addition, the AirGradient libraries are needed. At this point, the orignal
 version at https://github.com/airgradienthq/arduino does _not_ work with this
 code. It is suggested to use the `lalufu/merge` branch at
 https://github.com/Lalufu/airgradienthq-arduino/tree/lalufu/merge instead.
 
-At this time, this branch has the following changes on top of the original
-code:
+At this time, the branch of the Airgradient library
+has the following changes on top of the original code:
 
 - Use the `modbus-esp8266` library for communication with the CO2 sensor
 - Support for the ESP32-C3 microcontroller
