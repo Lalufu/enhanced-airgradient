@@ -673,9 +673,9 @@ void updateOLED()
         ln2 = "TVOC:" + String(TVOC) + " NOX:" + String(NOX);
 
         if (inF) {
-            ln3 = "F:" + String((temp * 9 / 5) + 32) + " H:" + String(hum) + "%";
+            ln3 = "F:" + String((temp * 9 / 5) + 32, 1) + " H:" + String(hum) + "%";
         } else {
-            ln3 = "C:" + String(temp) + " H:" + String(hum) + "%";
+            ln3 = "C:" + String(temp, 1) + " H:" + String(hum) + "%";
         }
 
         if (pressureSensorFound) {
